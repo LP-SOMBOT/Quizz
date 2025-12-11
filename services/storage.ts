@@ -1,4 +1,4 @@
-import { UserProfile, GameMatch, LeaderboardEntry, PlayerState, Question } from '../types';
+import { UserProfile, GameMatch, LeaderboardEntry } from '../types';
 import { generateQuestions } from '../constants';
 
 const KEYS = {

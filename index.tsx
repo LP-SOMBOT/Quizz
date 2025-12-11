@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
 import confetti from 'canvas-confetti';
-import { UserProfile, GameMatch, AppView, PlayerState, LeaderboardEntry } from './types';
+import { UserProfile, GameMatch, AppView, LeaderboardEntry } from './types';
 import { SUBJECTS, LESSONS, AVATARS } from './constants';
 import { StorageService } from './services/storage';
 
