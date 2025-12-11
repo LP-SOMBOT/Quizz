@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import confetti from 'canvas-confetti';
 import { UserProfile, GameMatch, AppView, LeaderboardEntry } from './types';
@@ -515,7 +515,7 @@ const App = () => {
     // Clear any old match
     StorageService.clearMatch();
 
-    const { match: instantMatch, isQueued } = StorageService.joinQueue(subject, lesson, user);
+    const { match: instantMatch } = StorageService.joinQueue(subject, lesson, user);
     
     if (instantMatch) {
       setMatch(instantMatch);
