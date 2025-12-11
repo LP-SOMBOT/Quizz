@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
+import confetti from 'canvas-confetti';
 import { UserProfile, GameMatch, AppView, PlayerState, LeaderboardEntry } from './types';
 import { SUBJECTS, LESSONS, AVATARS } from './constants';
 import { StorageService } from './services/storage';
@@ -348,11 +349,7 @@ const ResultsView = ({ match, userPid, onHome }: { match: GameMatch, userPid: st
 
   useEffect(() => {
     if (isWinner) {
-      // @ts-ignore
-      if (window.confetti) {
-        // @ts-ignore
-        window.confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
-      }
+      confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
     }
   }, [isWinner]);
 
