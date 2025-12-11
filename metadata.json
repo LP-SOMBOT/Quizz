@@ -1,0 +1,5 @@
+{
+  "name": "LocalPvP Academy",
+  "description": "A local multiplayer quiz game using LocalStorage for PVP simulation across browser tabs.",
+  "requestFramePermissions": []
+}
